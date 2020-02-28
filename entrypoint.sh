@@ -1,5 +1,6 @@
 #!/bin/sh
 
+set -x
 MYSQL_CMD="mysql -u root -p${MYSQL_ROOT_PASSWORD} -h ${MYSQL_HOST} "
 echo $MYSQL_CMD
 echo "CREATE DATABASE IF NOT EXISTS \`${MYSQL_DATABASE}\` ;" | `${MYSQL_CMD}`
